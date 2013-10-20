@@ -1,0 +1,136 @@
+/* 
+    Document   : login
+    Created on : Jul 30, 2013, 1:56:05 PM
+    Author     : gxlzlihao
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body{
+    text-align: center;
+}
+div#header{
+    display:block;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+}
+div#header>img{
+    position:relative;
+    right:200px;
+    top:70px;
+    z-index: 2;
+}
+div#header>p{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:blue;
+    width:500px;
+    color:white;
+    border-radius: 5px;
+    z-index: 3;
+    font-size: 30px;
+    padding:10px;
+}
+
+div#main{
+    margin:10px;
+}
+div#main fieldset{
+    border:2px #3900fe solid;
+    border-radius:20px;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#main fieldset legend{
+    position:relative;
+    border:2px #3900fe solid;
+    background:#3900fe;
+    
+}
+div#main input[type='text']{
+    margin:10px 0;
+}
+div#main input[type='password']{
+    margin:10px 0;
+}
+div#main fieldset span:nth-of-type(2){
+    margin-left:4px;
+}
+div#main fieldset input[type='checkbox']{
+    margin-left:60px;
+}
+div#main input[type='button']{
+    margin-top:10px;
+}
+
+
+div#new_user_panel{
+    display:none;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:300px;
+    z-index: 10;
+}
+div#new_user_panel fieldset{
+    border:5px #3900fe solid;
+    border-radius:20px;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#new_user_panel fieldset legend{
+    position:relative;
+    border:5px #3900fe solid;
+    background:#3900fe;
+    font-size: 20px;
+    border-radius: 5px;
+}
+div#new_user_panel fieldset span{
+    display:inline-block;
+    text-align: right;
+    width:130px;
+    margin:5px 0;
+}
+div#new_user_panel fieldset input[type='text']{
+    display:inline-block;
+    margin:5px 0;
+}
+div#new_user_panel fieldset input[type='button']{
+    /*width:100px;
+    height:40px;
+    margin:10px;*/
+}
+
+div#warning{
+    display:block;
+    position:relative;
+    margin:10px auto;
+    right:80px;
+    
+    opacity:0;
+}
+div#warning p{
+    display:block;
+    position: relative;
+    margin-left: auto;
+    margin-right:   auto;
+    left:150px;
+    bottom:50px;
+    background-color:black;
+    color:white;
+    width:200px;
+    border-radius: 5px;
+    line-height: 20px;
+    
+    font-size:20px;
+    overflow:visible;
+}
+

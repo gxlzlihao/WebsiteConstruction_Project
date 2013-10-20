@@ -1,0 +1,54 @@
+/* 
+    Document   : common_style
+    Created on : Jul 31, 2013, 1:03:54 PM
+    Author     : gxlzlihao
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body{
+    background-color:white;
+    text-align:center;
+}
+div#header{
+    display:block;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:1024px;
+    height:400px;
+    border-top:3px grey solid;
+    border-left:3px grey solid;
+    border-right:3px grey solid;
+}
+div#header img:first-child{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+div#header img:last-child{
+    width:1024px;
+    height:400px;
+}
+div#footer{
+    width:1024px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left:3px grey solid;
+    border-right:3px grey solid;
+    border-bottom:3px grey solid;
+}
+
+div#main{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:1024px;
+    height:800px;
+    border-left:3px grey solid;
+    border-right:3px grey solid;
+}

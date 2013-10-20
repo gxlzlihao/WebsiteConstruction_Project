@@ -1,0 +1,68 @@
+/* 
+    Document   : general_css
+    Created on : Jul 30, 2013, 12:26:19 PM
+    Author     : gxlzlihao
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body{
+    background-color:white;
+    text-align:center;
+}
+div#header{
+    display:block;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:1024px;
+    height:266px;
+    border-top:3px grey solid;
+    border-left:3px grey solid;
+    border-right:3px grey solid;
+}
+div#header img:first-child{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+div#header img:last-child{
+    width:1024px;
+    height:266px;
+}
+
+div#main{
+    margin-left:auto;
+    margin-right:auto;
+    width:1024px;
+    height:200px;
+    border-left:3px grey solid;
+    border-right:3px grey solid;
+}
+
+div#main h1{
+    font-size:50px;
+    width:1024px;
+}
+div#main a{
+    width:1024px;
+    color:blue;
+    font-size:20px;
+    text-align: center;
+}
+div#main a:hover{
+    color:red;
+}
+div#footer{
+    width:1024px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left:3px grey solid;
+    border-right:3px grey solid;
+    border-bottom:3px grey solid;
+}
+

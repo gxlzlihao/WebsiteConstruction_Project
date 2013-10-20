@@ -1,0 +1,520 @@
+/* 
+    Document   : admin
+    Created on : Jul 31, 2013, 1:09:58 PM
+    Author     : gxlzlihao
+    Description:
+        Define the style of the administrator`s page
+*/
+
+/*the menu part of admin page*/
+div#menu{
+    position:absolute;
+    display:block;
+    left:0px;
+    top:0px;
+    z-index: 100;
+}
+#menu ul ul {
+    position:relative;
+    display:block;
+    visibility:hidden;
+    opacity:0;
+    transition:opacity 1s, visibility 1s;
+    -webkit-transition:opacity 1s, visibility 1s;
+}
+#menu ul li:hover>ul{
+    visibility:visible;
+    opacity:1;
+}
+#menu ul {
+    background: /*#333333;*/grey;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    padding: 0 20px;
+    padding-top:2px;
+    border-radius: 10px;
+    list-style:none;
+    position:relative;
+    margin-top:10px;
+    margin-left:10px;
+    display:inline-table;
+}
+#menu ul:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+#menu ul li {
+    float:left;
+}
+#menu ul li a:hover{
+    background:#5b6571;
+    color:white;
+}
+#menu ul li a{
+    display:block;
+    text-align:center;
+    line-height:40px;
+    width:200px;
+    height:40px;
+    padding: 0px 0px;
+    color:/*#fa0d21*/white;
+    text-decoration:none;
+}
+#menu ul ul {
+    margin:0;
+    background: grey/*#333333*/;
+    padding:5px;
+    position:absolute;
+    top:100%;
+}
+#menu ul ul li{
+    float:none;
+    position:relative;
+}
+#menu ul ul li a{
+    padding:15px 30px;
+    text-align:left;
+    line-height:40px;
+    width:190px;
+    height:40px;
+    padding: 0px 0px;
+    padding-left:0px;
+    color: white/*#fa0d21*/;
+}
+#menu ul ul li a:hover{
+    background: #5b6571;
+    color:white;
+}
+/*change made by lihao*/
+#menu ul>li>ul>li:first-child>a:hover{
+    border-radius: 10px 10px 0 0;
+}
+#menu ul>li>ul>li:last-child>a:hover{
+    border-radius:0 0 10px 10px;
+}
+#menu ul>li>ul>li:only-child>a:hover{
+    border-radius:10px;
+}
+/*end of change*/
+#menu ul ul ul{
+    position:absolute;
+    left:103%;
+    top:0;
+}
+/*end of menu part*/
+
+div#content{
+    display:block;
+    position:relative;
+    top:60px;
+    /*background-color:blue;*/
+    height:740px;
+    width:1024px;
+    overflow: scroll;
+}
+
+/*New administrator part*/
+div#new_user_panel{
+    display:block;
+    position:relative;
+    top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:300px;
+    z-index: 10;
+}
+div#new_user_panel fieldset{
+    border:5px grey/*#3900fe*/ solid;
+    border-radius:20px;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#new_user_panel fieldset legend{
+    position:relative;
+    border:5px grey solid;
+    background:grey;
+    font-size: 20px;
+    border-radius: 5px;
+    color:white;
+}
+div#new_user_panel fieldset span{
+    display:inline-block;
+    text-align: right;
+    width:130px;
+    margin:5px 0;
+}
+div#new_user_panel fieldset input[type='text']{
+    display:inline-block;
+    margin:5px 0;
+}
+div#new_user_panel fieldset input[type='button']{
+    /*width:100px;
+    height:40px;
+    margin:10px;*/
+}
+
+div#warning{
+    display:block;
+    position:relative;
+    margin:10px auto;
+    right:80px;
+    
+    opacity:0;
+}
+div#warning p{
+    display:block;
+    position: relative;
+    margin-left: auto;
+    margin-right:   auto;
+    left:150px;
+    bottom:50px;
+    background-color:black;
+    color:white;
+    width:200px;
+    border-radius: 5px;
+    line-height: 20px;
+    
+    font-size:20px;
+    overflow:visible;
+}
+/*end of new administrator part*/
+
+/*new ingredient part*/
+div#new_ingredient_panel{
+    display:block;
+    position:relative;
+    top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:300px;
+    z-index: 10;
+}
+div#new_ingredient_panel fieldset{
+    border:5px grey/*#3900fe*/ solid;
+    border-radius:20px;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#new_ingredient_panel fieldset legend{
+    position:relative;
+    border:5px grey solid;
+    background:grey;
+    font-size: 20px;
+    border-radius: 5px;
+    color:white;
+}
+div#new_ingredient_panel fieldset span{
+    display:inline-block;
+    text-align: right;
+    width:130px;
+    margin:5px 0;
+    margin-right:5px;
+}
+div#new_ingredient_panel fieldset input[type='text']{
+    display:inline-block;
+    width:200px;
+    margin:5px 0;
+}
+div#new_ingredient_panel fieldset textarea{
+    text-align: left;
+    width:200px;
+    height:100px;
+    display:inline-block;
+    margin:5px 0;
+}
+span#des{
+    position:relative;
+    bottom:100px;
+}
+
+div#warning{
+    display:block;
+    position:relative;
+    margin:10px auto;
+    right:80px;
+    
+    opacity:0;
+}
+div#warning p{
+    display:block;
+    position: relative;
+    margin-left: auto;
+    margin-right:   auto;
+    left:150px;
+    bottom:50px;
+    background-color:black;
+    color:white;
+    width:200px;
+    border-radius: 5px;
+    line-height: 20px;
+    
+    font-size:20px;
+    overflow:visible;
+}
+/*end of new ingredient part*/
+
+/*Ingredients List*/
+table#ingredientsList{
+    margin:5px;
+    width:1014px;
+}
+table#ingredientsList th{
+    background-color:grey;
+    padding:10px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+table#ingredientsList th:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+table#ingredientsList th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+table#ingredientsList td{
+    font-size: 20px;
+    text-align: center;
+    padding:15px;
+    border-bottom: 3px grey solid;
+}
+table#ingredientsList td input[type='text']{
+    width:60px;
+    font-size: 20px;
+    text-align: center;
+}
+table#ingredientsList td:nth-child(3) textarea{
+    margin:0px;
+    padding:0px;
+    width:300px;
+}
+/*End of Ingredients` List*/
+
+/*Administrators List*/
+table#administratorsList{
+    margin:5px;
+    width:1014px;
+}
+table#administratorsList th{
+    background-color:grey;
+    padding:10px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+table#administratorsList th:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+table#administratorsList th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+table#administratorsList td{
+    font-size: 20px;
+    text-align: center;
+    padding:15px;
+    border-bottom: 3px grey solid;
+}
+/*End of administrators list*/
+
+/*New pizza panel*/
+div#new_pizza_panel{
+    display:block;
+    position:relative;
+    top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:300px;
+    z-index: 10;
+}
+img#pizza_background{
+    /*display:block;*/
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left:72px;
+    top:-20px;
+    opacity:0.2;
+    z-index: -20;
+}
+div#new_pizza_panel fieldset{
+    border:5px grey/*#3900fe*/ solid;
+    border-radius:20px;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#new_pizza_panel fieldset legend{
+    position:relative;
+    border:5px grey solid;
+    background:grey;
+    font-size: 20px;
+    border-radius: 5px;
+    color:white;
+}
+div#new_pizza_panel fieldset span{
+    display:inline-block;
+    text-align: right;
+    width:130px;
+    margin:5px 0;
+    margin-right:5px;
+}
+div#new_pizza_panel fieldset input[type='text']{
+    display:inline-block;
+    width:200px;
+    margin:5px 0;
+}
+div#new_pizza_panel fieldset textarea{
+    text-align: left;
+    width:200px;
+    height:100px;
+    display:inline-block;
+    margin:5px 0;
+}
+span#des{
+    position:relative;
+    bottom:100px;
+}
+div#new_pizza_panel h1{
+    display: block;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    font-size: 30px;
+}
+/*End of new pizza panel*/
+
+/*Pizza`s List*/
+table#pizzasList{
+    margin:5px;
+    width:1014px;
+}
+table#pizzasList th{
+    background-color:grey;
+    padding:10px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+table#pizzasList th:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+table#pizzasList th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+table#pizzasList td{
+    font-size: 20px;
+    text-align: center;
+    padding:15px;
+    border-bottom: 3px grey solid;
+}
+
+table#pizzasList td:first-child>table{
+    display:inline-table;
+    position:absolute;
+    background-color: red;
+    color:white;
+}
+/*End of pizzas` list*/
+
+/*Orders Information List*/
+table.orderInfor{
+    margin:5px;
+    width:1014px;
+}
+table.orderInfor th{
+    background-color:grey;
+    padding:10px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+table.orderInfor th:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+table.orderInfor th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+table.orderInfor td{
+    font-size: 20px;
+    text-align: center;
+    padding:15px;
+    border-bottom: 3px grey solid;
+}
+
+table.orderInfor td:first-child>table{
+    display:inline-table;
+    position:absolute;
+    background-color: red;
+    color:white;
+}
+table.small{
+    width:507px;
+}
+/*End of Orders` List*/
+
+/*The new home page for manager*/
+div#left{
+    position:absolute;
+    left:0;
+    top:0;
+    width:700px;
+    overflow: scroll;
+}
+div#left>table.orderInfor{
+    margin:5px;
+    width:690px;
+}
+div#left>table.orderInfor th{
+    background-color:grey;
+    padding:10px;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+div#left>table.orderInfor th:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+div#left>table.orderInfor th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div#left>table.orderInfor td{
+    font-size: 15px;
+    text-align: center;
+    padding:15px;
+    border-bottom: 3px grey solid;
+}
+div#left>table.small{
+    width:400px;
+}
+
+div#right{
+    position:absolute;
+    right:0;
+    top:0;
+    width:320px;
+    border-left: 4px grey solid;
+}
+div#right>table#ingredientsList{
+    width:320px;
+}
+div#right>table#pizzasList{
+    width:320px;
+}
+div#right>h1{
+    margin:5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+/*End of the home page*/
